@@ -1,9 +1,9 @@
-let person ={
-    firstName : "John",
-    lastName :  "kendy",
-    age  : 50,
-    weight : 54,
-}
+let person = {
+  firstName: "John",
+  lastName: "kendy",
+  age: 50,
+  weight: 54,
+};
 /*
 //Accessing object properties using
 console.log(person["firstName"]);
@@ -48,27 +48,21 @@ delete person.weight;
 //console.log(person.weight); 
 */
 
-
-
-
-
 //for in loop in object for rading all the properties of an object
 
-for(let y in person){
-   // console.log(y); //only property name
-   // console.log(person[y]); //property value
-    console.log(y +":\t"+ person[y]); //property name and value
-
-
+for (let y in person) {
+  // console.log(y); //only property name
+  // console.log(person[y]); //property value
+  console.log(y + ":\t" + person[y]); //property name and value
 }
 
 let employee = {
-    ename : "madhu",
-    email : "email@gmail.com",
-    ejob : "Engineer",
-    baseSalary : 50000,
-    bonus : function(){
-        return((this.baseSalary*10)/100);
-    }
-}
+  ename: "madhu",
+  email: "email@gmail.com",
+  ejob: "Engineer",
+  baseSalary: 50000,
+  bonus: function () {
+    return (this.baseSalary * 10) / 100;
+  },
+};
 console.log("The salary increment is : " + employee.bonus());
